@@ -1,8 +1,12 @@
 #!/bin/bash
 
-# Update package list and install zsh
+# Update package list
+echo "Updating package list..."
+sudo apt update
+
+# Install Zsh
 echo "Installing Zsh..."
-sudo apt update && sudo apt install zsh -y
+sudo apt install zsh -y
 
 # Set Zsh as the default shell
 echo "Setting Zsh as the default shell..."
@@ -20,7 +24,22 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$
 echo "Configuring .zshrc for Powerlevel10k..."
 sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 
-# Install recommended font for Powerlevel10k
+# Install tmux
+echo "Installing tmux..."
+sudo apt install tmux -y
+
+# Install and setup Neovim
+echo "Installing Neovim..."
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+sudo mv nvim.appimage /usr/local/bin/nvim
+
+# Clone Neovim configuration
+echo "Setting up Neovim configuration..."
+mkdir -p ${HOME}/.config/nvim
+git clone https://github.com/JannisK89/init.lua ${HOME}/.config/nvim
+
+# Install recommended font for Powerlevel10k and Neovim
 echo "Installing the recommended Meslo Nerd Font..."
 FONT_PATH="$HOME/.local/share/fonts"
 mkdir -p $FONT_PATH
