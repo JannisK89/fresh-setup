@@ -39,9 +39,5 @@ echo "Setting up Neovim configuration"
 mkdir -p ${HOME}/.config/nvim
 git clone https://github.com/JannisK89/init.lua ${HOME}/.config/nvim
 
-# Source the .zshrc to apply changes
-echo "Sourcing .zshrc..."
-source ~/.zshrc
-
 echo "Installation completed. Please restart your terminal!"
 
