@@ -22,7 +22,7 @@ wget https://raw.githubusercontent.com/JannisK89/fresh-setup/main/main.sh
 sh main.sh
 ```
 
-### 2. Follow Screen Prompts, when prompted to change ZSH to your default shell, press N.
+### 2. Follow Screen Prompts, when Oh My Zsh starts, type "exit" to resume install.
 
 ### 3. Restart Your Computer
 
