@@ -37,3 +37,5 @@ tmux
 Press Ctrl + A
 
 Press I (Shift + i)
+
+### 5. Enjoy
