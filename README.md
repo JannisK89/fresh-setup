@@ -22,9 +22,9 @@ wget https://raw.githubusercontent.com/JannisK89/fresh-setup/main/main.sh
 sh main.sh
 ```
 
-### 2. Follow Screen Prompts
+### 2. Follow Screen Prompts, when prompted to change ZSH to your default shell, press N.
 
-### 3. Restart Your Terminal
+### 3. Restart Your Computer
 
 ### 4. Install Tmux plugins
 
