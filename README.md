@@ -35,4 +35,5 @@ tmux
 ```
 
 Press Ctrl + A
+
 Press I (Shift + i)
