@@ -4,6 +4,9 @@
 echo "Updating package list"
 sudo apt update
 
+# Install Git
+sudo apt install git
+
 # Install Zsh
 echo "Installing Zsh"
 sudo apt install zsh -y
@@ -18,7 +21,7 @@ wget https://raw.githubusercontent.com/JannisK89/config-files/main/.tmux.conf
 
 # Install and setup Neovim
 echo "Installing Neovim"
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+wget https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
 chmod u+x nvim.appimage
 sudo mv nvim.appimage /usr/local/bin/nvim
 sudo apt install libfuse2
@@ -32,7 +35,7 @@ git clone https://github.com/JannisK89/init.lua ${HOME}/.config/nvim
 
 # Install Oh-My-Zsh
 echo "Installing Oh-My-Zsh"
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sh -c "$(wget -O- https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Clone the Powerlevel10k theme into the Oh-My-Zsh custom themes directory
 echo "Installing Powerlevel10k theme, plugins and config file"
