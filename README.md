@@ -7,7 +7,7 @@ Sets up Neovim, Tmux and ZSH on a fresh linux install.
 ### 1. Get and run script
 
 ```
-sh -c $(wget -O- https://raw.githubusercontent.com/JannisK89/fresh-setup/main/main.sh)
+sh -c "$(wget -O- https://raw.githubusercontent.com/JannisK89/fresh-setup/main/main.sh)"
 ```
 
 ### 2. Follow Screen Prompts, when Oh My Zsh starts, type "exit" to resume install.
